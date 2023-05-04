@@ -12,7 +12,7 @@ const App = () => {
       fetch("https://dummyjson.com/products")
       .then((res)=>(res.json()))
       .then((res)=>{setdata(res)})
-      .catch((err)=>{console.log(err); setdata("No data found")})
+      .catch((err)=>{console.log(err); setdata(`An error occurred: ${err}`)})
     }
     fetchData();
   }, []);
