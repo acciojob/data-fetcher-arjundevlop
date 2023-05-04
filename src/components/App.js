@@ -24,7 +24,7 @@ const App = () => {
   return (
     <div className="app">
     <h1>Data Fetched from API</h1>
-        <pre>{JSON.stringify(data)}</pre>
+        <pre className="data">{JSON.stringify(data,null,2)}</pre>
     </div>
   )
 }
